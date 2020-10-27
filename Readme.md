@@ -1,4 +1,16 @@
-## Pofolio
+# Pofolio - Year-End Training Project
 
-.This is my third Web Design Project
-.This is a project of Year-End training
+## Technologies
+
+- HTML
+- CSS
+- JavaScript
+- JQuery
+- Google Map
+
+## Features
+
+- Sticky Navigation
+- Scroll Reveal
+- Responsive Navigation
+- Location with Google Map
