@@ -10,6 +10,7 @@ describe("Daily tasks page", () => {
   });
 
   it("should displays page title", () => {
+    cy.get("h1").should("have.length", 1);
     cy.get("h1").contains(/daily tasks/i);
   });
 });

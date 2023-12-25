@@ -12,6 +12,7 @@ two ways to test
 2. component tests => individual ui elements
 
 unit testing => focus on individual building block
+
 e2e testing => complete workflow
 
 unit + e2e
@@ -21,11 +22,13 @@ unit + e2e
 ## 02. Fundamentals
 
 file => .cy.ts
+
 test description should be a complete sentence
 
 cypress runs on local machine
 
 cy.visit(url) => load website => load fail, test fail
+
 [visit](https://docs.cypress.io/api/commands/visit)
 
 typescript autocompletion
@@ -34,7 +37,14 @@ typescript autocompletion
 /// <reference types="Cypress" />
 ```
 
-cy.get(cssSelector) => find one or more DOM elements by selector
+cy.get(selector) => find one or more DOM elements by selector
+
 [get](https://docs.cypress.io/api/commands/get)
 
 [cy.contains()](https://docs.cypress.io/api/commands/contains)
+
+cypress includes implicit assertions. no need to write explicit assertion like expect()
+
+can add manual assertion with should()
+
+[should](https://docs.cypress.io/api/commands/should)
