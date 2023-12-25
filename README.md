@@ -17,3 +17,24 @@ e2e testing => complete workflow
 unit + e2e
 
 [docs](https://docs.cypress.io/guides/overview/why-cypress)
+
+## 02. Fundamentals
+
+file => .cy.ts
+test description should be a complete sentence
+
+cypress runs on local machine
+
+cy.visit(url) => load website => load fail, test fail
+[visit](https://docs.cypress.io/api/commands/visit)
+
+typescript autocompletion
+
+```js
+/// <reference types="Cypress" />
+```
+
+cy.get(cssSelector) => find one or more DOM elements by selector
+[get](https://docs.cypress.io/api/commands/get)
+
+[cy.contains()](https://docs.cypress.io/api/commands/contains)
