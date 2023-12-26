@@ -1,12 +1,12 @@
 /// <reference types="Cypress" />
 
-describe("Daily tasks page", () => {
+describe("Daily Tasks Page", () => {
   beforeEach(() => {
     cy.visit("http://localhost:5173/");
   });
 
   it("should shows image", () => {
-    cy.get(".main-header img");
+    cy.get(".main-header").find("img");
   });
 
   it("should displays page title", () => {

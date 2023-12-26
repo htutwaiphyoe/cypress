@@ -48,3 +48,7 @@ cypress includes implicit assertions. no need to write explicit assertion like e
 can add manual assertion with should()
 
 [should](https://docs.cypress.io/api/commands/should)
+
+.get() chain is separate query, use .find() for nested elements
+
+[find](https://docs.cypress.io/api/commands/find)
