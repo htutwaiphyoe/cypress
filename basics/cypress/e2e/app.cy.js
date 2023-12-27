@@ -13,4 +13,10 @@ describe("Daily Tasks Page", () => {
     cy.get("h1").should("have.length", 1);
     cy.get("h1").contains(/daily tasks/i);
   });
+
+  it("should open when Add Task button is clicked and close model when Cancel btn and backdrop are clicked.", () => {
+    const btn = cy.get("button").contains(/add task/i);
+    btn.click();
+    cy.get(".backdrop").click({ force: true });
+  });
 });

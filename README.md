@@ -52,3 +52,11 @@ can add manual assertion with should()
 .get() chain is separate query, use .find() for nested elements
 
 [find](https://docs.cypress.io/api/commands/find)
+
+testing => select and interact elements
+
+cypress try to click center of the screen
+
+.click({force: true}) => click whatever
+
+[click](https://docs.cypress.io/api/commands/click)
