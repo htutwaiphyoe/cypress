@@ -60,3 +60,5 @@ cypress try to click center of the screen
 .click({force: true}) => click whatever
 
 [click](https://docs.cypress.io/api/commands/click)
+
+proper assertions for better tests

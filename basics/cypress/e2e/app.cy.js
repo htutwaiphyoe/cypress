@@ -15,8 +15,17 @@ describe("Daily Tasks Page", () => {
   });
 
   it("should open when Add Task button is clicked and close model when Cancel btn and backdrop are clicked.", () => {
-    const btn = cy.get("button").contains(/add task/i);
-    btn.click();
-    cy.get(".backdrop").click({ force: true });
+    cy.get("button")
+      .contains(/add task/i)
+      .click();
+
+    const modal = cy.get(".modal");
+    const backdrop = cy.get(".backdrop");
+    modal.should("exist");
+    backdrop.should("exist");
+
+    backdrop.click({ force: true });
+    modal.should("not.exist");
+    backdrop.should("not.exist");
   });
 });
