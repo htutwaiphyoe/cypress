@@ -62,3 +62,7 @@ cypress try to click center of the screen
 [click](https://docs.cypress.io/api/commands/click)
 
 proper assertions for better tests
+
+keyboard typing => type()
+
+[type](https://docs.cypress.io/api/commands/type)
