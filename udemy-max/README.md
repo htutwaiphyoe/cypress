@@ -115,4 +115,14 @@ attribute assertion => .should('have.attr', value)
 
 [and](https://docs.cypress.io/api/commands/and)
 
-contains() can change should()
+contains() can chain should()
+
+[Chains-of-Commands](https://docs.cypress.io/guides/core-concepts/introduction-to-cypress#Chains-of-Commands)
+
+cannot assign or work with the return values of any Cypress command. Test commands are enqueued and run asynchronously. return chainable object, not element itself
+
+all test instructions are added in queue and run that queue step by step
+
+use alias instead of variable => .as("name"), .get("@name")
+
+[variables-and-aliases](https://docs.cypress.io/guides/core-concepts/variables-and-aliases)

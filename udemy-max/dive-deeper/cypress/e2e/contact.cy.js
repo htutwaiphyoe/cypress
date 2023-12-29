@@ -15,11 +15,12 @@ describe("contact form", () => {
     cy.get("[data-cy='contact-input-name']").type(formData.name);
     cy.get("[data-cy='contact-input-email']").type(formData.email);
 
-    cy.get("[data-cy='contact-btn-submit']")
+    cy.get("[data-cy='contact-btn-submit']").as("submitBtn");
+    cy.get("@submitBtn")
       .contains(/send message/i)
-      .should("not.have.attr", "disabled");
-    cy.get("[data-cy='contact-btn-submit']").click();
-    cy.get("[data-cy='contact-btn-submit']")
+      .and("not.have.attr", "disabled");
+    cy.get("@submitBtn").click();
+    cy.get("@submitBtn")
       .contains(/sending/i)
       .should("have.attr", "disabled");
   });
