@@ -106,3 +106,13 @@ browser back and forward => .go()
 [go](https://docs.cypress.io/api/commands/go)
 
 click test and find suggested selector from cypress environment
+
+equal assertion => .should('equal', value)
+
+attribute assertion => .should('have.attr', value)
+
+.and() => alias of .should()
+
+[and](https://docs.cypress.io/api/commands/and)
+
+contains() can change should()
