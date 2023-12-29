@@ -66,3 +66,5 @@ proper assertions for better tests
 keyboard typing => type()
 
 [type](https://docs.cypress.io/api/commands/type)
+
+contains can find partial text and has implicit assertion

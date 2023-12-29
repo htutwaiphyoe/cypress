@@ -58,4 +58,14 @@ describe("Daily Tasks Page", () => {
     cy.get(".task-list").find(".task").find("h2").contains(task.title);
     cy.get(".task-list").find(".task").find("p").contains(task.summary);
   });
+
+  it("should validate form when user click without any input data", () => {
+    cy.get("button")
+      .contains(/add task/i)
+      .click();
+    cy.get(".modal")
+      .contains(/add task/i)
+      .click();
+    cy.get(".error-message").contains(/please provide values/i);
+  });
 });
