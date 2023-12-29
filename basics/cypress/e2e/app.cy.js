@@ -68,4 +68,28 @@ describe("Daily Tasks Page", () => {
       .click();
     cy.get(".error-message").contains(/please provide values/i);
   });
+
+  it("should filter tasks", () => {
+    const task = {
+      title: "Mastering Cypress",
+      summary: "Learning Cypress course by Max",
+      category: "urgent",
+    };
+    cy.get("button")
+      .contains(/add task/i)
+      .click();
+    cy.get("#title").type(task.title);
+    cy.get("#summary").type(task.summary);
+    cy.get("#category").select(task.category);
+    cy.get(".modal")
+      .contains(/add task/i)
+      .click();
+    cy.get(".task").should("have.length", 1);
+    cy.get("select#filter").select("low");
+    cy.get(".task").should("have.length", 0);
+    cy.get("select#filter").select(task.category);
+    cy.get(".task").should("have.length", 1);
+    cy.get("select#filter").select("all");
+    cy.get(".task").should("have.length", 1);
+  });
 });

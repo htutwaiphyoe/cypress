@@ -68,3 +68,9 @@ keyboard typing => type()
 [type](https://docs.cypress.io/api/commands/type)
 
 contains can find partial text and has implicit assertion
+
+dropdown option value select => .select()
+
+[select](https://docs.cypress.io/api/commands/select)
+
+don't add same logic in different tasks
