@@ -74,3 +74,17 @@ dropdown option value select => .select()
 [select](https://docs.cypress.io/api/commands/select)
 
 don't add same logic in different tasks
+
+tests should run in isolation and test orders should not matter
+
+specific index in an array of elements => .eq(index)
+
+[eq](https://docs.cypress.io/api/commands/eq)
+
+first element => .first()
+
+[first](https://docs.cypress.io/api/commands/first)
+
+last element => .last()
+
+[last](https://docs.cypress.io/api/commands/last)
