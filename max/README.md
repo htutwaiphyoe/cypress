@@ -88,3 +88,21 @@ first element => .first()
 last element => .last()
 
 [last](https://docs.cypress.io/api/commands/last)
+
+## 03. Diving Deeper
+
+data-cy attribute/props => best practice for selecting elements => just for cypress, no side-effect
+
+css selector can be dynamic due to library
+
+[data-cy](https://docs.cypress.io/guides/references/best-practices#Selecting-Elements)
+
+.location() for window.location
+
+[location](https://docs.cypress.io/api/commands/location)
+
+browser back and forward => .go()
+
+[go](https://docs.cypress.io/api/commands/go)
+
+click test and find suggested selector from cypress environment
