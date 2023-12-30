@@ -136,3 +136,7 @@ direct access subject (wrapper object of the dom element) with .then((el) => {})
 [wrap](https://docs.cypress.io/api/commands/wrap)
 
 [assertions](https://docs.cypress.io/guides/references/assertions)
+
+form submit with enter key press => .type("email{enter}")
+
+[key press](https://docs.cypress.io/api/commands/type#Arguments)
