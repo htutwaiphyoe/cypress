@@ -126,3 +126,13 @@ all test instructions are added in queue and run that queue step by step
 use alias instead of variable => .as("name"), .get("@name")
 
 [variables-and-aliases](https://docs.cypress.io/guides/core-concepts/variables-and-aliases)
+
+direct access subject (wrapper object of the dom element) with .then((el) => {})
+
+[then](https://docs.cypress.io/api/commands/then)
+
+.wrap(el) for chain commands or assertion with expect()
+
+[wrap](https://docs.cypress.io/api/commands/wrap)
+
+[assertions](https://docs.cypress.io/guides/references/assertions)

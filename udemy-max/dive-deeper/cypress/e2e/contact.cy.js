@@ -15,13 +15,16 @@ describe("contact form", () => {
     cy.get("[data-cy='contact-input-name']").type(formData.name);
     cy.get("[data-cy='contact-input-email']").type(formData.email);
 
-    cy.get("[data-cy='contact-btn-submit']").as("submitBtn");
-    cy.get("@submitBtn")
-      .contains(/send message/i)
-      .and("not.have.attr", "disabled");
-    cy.get("@submitBtn").click();
-    cy.get("@submitBtn")
-      .contains(/sending/i)
-      .should("have.attr", "disabled");
+    cy.get("[data-cy='contact-btn-submit']").then(($el) => {
+      cy.wrap($el)
+        .contains(/send message/i)
+        .and("not.have.attr", "disabled");
+
+      cy.wrap($el).click();
+
+      cy.wrap($el)
+        .contains(/sending/i)
+        .should("have.attr", "disabled");
+    });
   });
 });
