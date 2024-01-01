@@ -140,3 +140,19 @@ direct access subject (wrapper object of the dom element) with .then((el) => {})
 form submit with enter key press => .type("email{enter}")
 
 [key press](https://docs.cypress.io/api/commands/type#Arguments)
+
+cypress checks assertions in default 4s time frame
+
+.blur() and .focus()
+
+[focus](https://docs.cypress.io/api/commands/focus)
+
+[blur](https://docs.cypress.io/api/commands/blur)
+
+.parent() to get parent element
+
+[parent](https://docs.cypress.io/api/commands/parent)
+
+.children()
+
+[children](https://docs.cypress.io/api/commands/children)
