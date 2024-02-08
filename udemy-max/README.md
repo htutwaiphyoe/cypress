@@ -156,3 +156,9 @@ cypress checks assertions in default 4s time frame
 .children()
 
 [children](https://docs.cypress.io/api/commands/children)
+
+analyze test with cypress studio
+
+npx cypress open => open cypress studio
+
+npx cypress run => run cypress headless mode, generate summary, screenshot for failed tests, videos for each test file
